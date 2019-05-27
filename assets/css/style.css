@@ -126,3 +126,48 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+
+/*MEDIA QUERIES*/
+/*when the screen is <960px make body float left and reduce size*/
+@media screen and (max-width:980px) {
+    .container {
+        float: left;
+        width: 560px;
+    }
+}
+
+/*when the screen is <768px make 10% wider and Name in navbar to the left*/
+@media screen and (max-width:768px) {
+    .container {
+        width: 90%;
+        float: none;
+    }
+
+    .name {
+        left: 8px;
+    }
+}
+
+/*when the screen is <640px make navbar static*/
+@media screen and (max-width:640px) {
+    .navbar {
+        position: static;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 10px;
+        border-bottom: 0px ;
+    }
+    
+
+    .name {
+        position: static;
+        padding:35px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        margin-top: 10px;
+    }
+}
