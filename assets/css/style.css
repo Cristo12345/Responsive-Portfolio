@@ -20,6 +20,7 @@ h3 {
 
 /* class for static navbar at top of page */
 .navbar {
+    z-index: 2;
     position: fixed;
     padding: 35px;
     top: 0;
@@ -70,6 +71,7 @@ h3 {
 /* Placeholder image */
 .placeholder-image {
     position: relative;
+    z-index: 0;
     height: 180px;
     width: 30%;
 }
@@ -147,6 +149,10 @@ input[type=submit]:hover {
     .name {
         left: 8px;
     }
+
+    .placeholder-image {
+        min-width: 250px;
+    }
 }
 
 /*when the screen is <640px make navbar static*/
@@ -169,5 +175,13 @@ input[type=submit]:hover {
 
     .container {
         margin-top: 10px;
+    }
+
+    .placeholder-image {
+        max-width: 300px;
+        width:100%;
+        display: block;
+        margin:10px auto;
+        
     }
 }
