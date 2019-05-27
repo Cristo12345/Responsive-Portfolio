@@ -132,10 +132,15 @@ input[type=submit]:hover {
 
 /*MEDIA QUERIES*/
 /*when the screen is <960px make body float left and reduce size*/
+/* also move nametag to left */
 @media screen and (max-width:980px) {
     .container {
         float: left;
         width: 560px;
+    }
+
+    .name {
+        left: 8px;
     }
 }
 
@@ -146,9 +151,6 @@ input[type=submit]:hover {
         float: none;
     }
 
-    .name {
-        left: 8px;
-    }
 
     .placeholder-image {
         min-width: 250px;
@@ -182,6 +184,5 @@ input[type=submit]:hover {
         width:100%;
         display: block;
         margin:10px auto;
-        
     }
 }
